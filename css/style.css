@@ -6,102 +6,8 @@
 
 /* fuente que voy a utilizar */
 @import url('https://fonts.googleapis.com/css2?family=Asap:wght@300&display=swap');
+
 /* nombre de fuente: font-family: 'Asap', sans-serif; */
-
-/* Bootstrap para contacto.html */
-
-.form-holder {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    min-height: 80vh;
-    justify-content: center;
-}
-
-.form-holder .form-content {
-    text-align: center;
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-justify-content: center;
-    justify-content: center;
-    -webkit-align-items: center;
-    align-items: center;
-}
-
-.form-content .form-items {
-    border: 3px solid #969191;
-    padding: 40px;
-    display: inline-block;
-    width: 100%;
-    min-width: 540px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    border-radius: 10px;
-    text-align: left;
-    -webkit-transition: all 0.4s ease;
-    transition: all 0.4s ease;
-}
-
-.form-content h3 {
-    color: #969191;
-    text-align: left;
-    font-size: 28px;
-    font-weight: 600;
-    margin-bottom: 5px;
-}
-
-.form-content h3.form-title {
-    margin-bottom: 30px;
-}
-
-.form-content p {
-    color: #969191;
-    text-align: left;
-    font-size: 17px;
-    font-weight: 300;
-    line-height: 20px;
-    margin-bottom: 30px;
-}
-
-
-.form-content label{
-    color: #969191;
-}
-
-.form-content input[type=text], .form-content input[type=password], .form-content input[type=email]{
-    font-size: 1rem;
-    font-weight: 300;
-    -webkit-transition: all 0.3s ease;
-    transition: all 0.3s ease;
-    margin-top: 1rem;
-    width: 100%;
-    padding: 9px 20px;
-    text-align: left;
-    border: 0;
-    outline: 0;
-    border-radius: 6px;
-    background-color: #bdb8b8
-}
-
-
-.btn-primary{
-    background-color: #6C757D;
-    outline: none;
-    border: 0px;
-    box-shadow: none;
-}
-
-.btn-primary:hover, .btn-primary:focus, .btn-primary:active{
-    background-color: #495056;
-    outline: none !important;
-    border: none !important;
-    box-shadow: none;
-}
-
 
 /* css aplicado a header */
 header{
@@ -112,11 +18,9 @@ header{
     align-items: center;
     position: sticky;
     top: 0;
+    z-index: 1;
 }  
 
-.bg-gris{
-    background-color: rgb(218, 216, 201);
-}
 
 /* css aplicado a body */
 
@@ -132,6 +36,7 @@ body{
     list-style: none;
     gap: 3.125rem;
     display:flex;
+    width: 100%;
 }
 
 .navbar li a{
@@ -142,6 +47,10 @@ font-size: 1.25rem;
 margin-right: 1.875rem;
 }
 
+.navbar-nav a:hover{
+    background-color: #a8a6a6;
+    border-radius: 4px;
+}
 
 .navbar-brand img{
     width: 40px;
@@ -209,22 +118,21 @@ margin-top: 3.125rem;
 /* css aplicado a producto.html */
 
 .flex-image{
-    display: flex;
-    justify-content: center;
-    gap: 5rem;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 40% 50%;
 }
 
 .style-products ul{
+    display: grid;
+    justify-content: flex-end;
     margin-top: 3.4375rem;
     margin-bottom: 3.4375rem;
 }
 
 .style-products img{
-    height: 12.5rem;
-    width: 12.5rem;
+    height: 10rem;
+    width: 10rem;
     margin-block: .9375rem; 
-    margin-inline: 1.875rem;
 }
 
 .style-products ul li{
@@ -232,29 +140,23 @@ margin-top: 3.125rem;
 }
 
 .main-producto{
-    margin-bottom: 18.75rem;
-}
-
-.main-producto a{
-    text-decoration: none;
+    display: grid;
+    justify-content: center;
+    margin-bottom: 9.375rem;
 }
 
 .main-producto img{
-height: 25rem;
-width: 25rem;
-margin-top: 12.5rem;
-}
-
-.main-producto img h2 p{
-    text-align: center;
+    height: 21.875rem;
+    width: 21.875rem;
+    margin-top: 8.125rem;
 }
 
 .main-producto h2{
     color: rgb(0, 0, 0);
     font-family:'Asap', sans-serif;
-    font-size: 3.125rem; 
+    font-size: 2.5rem; 
     text-align: center;
-    margin-top: 1.5625rem;
+    margin-top: 1.25rem;
 }
 
 .main-producto p{
@@ -262,15 +164,19 @@ margin-top: 12.5rem;
     font-family:'Asap', sans-serif;
     font-size: 1.0625rem;
     text-align: center;
+    margin-bottom: 0;
 }
 
-.simbolo-class{
-    padding-bottom: 13.75rem;
+.select-producto{
+    background-color: #c9c5c5;
+    width: 17.5rem; 
+    padding-left: 1.875rem;
+    border: 2px solid #949494;
+    border-radius: 5px;
+    font-size: 1.25rem;
 }
-
-.simbolo-mas-producto img{
-    height: 3.75rem;
-    width: 3.75rem;
+.main-producto select:hover{
+    background-color: #969191;
 }
 
 
@@ -302,80 +208,59 @@ margin-top: 12.5rem;
     margin-top: 1.25rem;
     margin-bottom: 5rem  ;
 }
-
+.form-label{
+    font-weight: bold;
+    font-size: 1.625rem;
+  }
+  .form-text{
+    font-size: .9375rem;
+  }
+  .text-danger {
+    color: red;
+  }
+  .bg-gris{
+    background-color: rgb(218, 216, 201);
+}
+  .form-container{
+    text-align: left;
+    margin-left: 12.5rem;
+    margin-right: 12.5rem;
+    border-radius: 2%;
+  }
+  .margin-form{
+    margin-left: 12.5rem;
+    margin-right: 12.5rem;
+    padding-top: 1.25rem;
+  }
+  form button{
+    margin-bottom: 1.25rem;
+  }
 
 /* css aplicado a shop.html */
 
-.tamaño-imagen{
-    display: grid;
-    justify-items: center;
+.card img{
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
 }
 
-.tamaño-imagen img{
-    height: 15.625rem;
-    width: 12.5rem;
+.cardBody h5{
+    font-size: 1.875rem;
+
 }
 
-.tamaño-texto-shop{
-    display: grid;
-    gap: .5rem;
-}
-
-.tamaño-texto-shop h2{
-    color: black;
-    font-family:'Asap', sans-serif;
+.cardBody a{
     font-size: 1.25rem;
-    margin-top: 1.25rem;
-    display: grid;
-    justify-content: center;
 }
-
-.tamaño-texto-shop button a{
-    color: white;
-    font-size: 1.25rem;
-    display: grid;
-    justify-content: center;
-}
-
-.tamaño-texto-shop p{
-    color: black;
-    font-family:'Asap', sans-serif;
-    font-size: 1.5625rem;
-    display: grid;
-    justify-content: center;
-}
-
-.button-añadir-shop{
-    color: black;
-    font-family:'Asap', sans-serif;
-    border: none;
-    padding-right: 2.5rem;
-    padding-left: 2.5rem;
-    padding-top: .3125rem;
-    padding-bottom: .1875rem;
-    background-color: black;
-}
-
-.button-añadir-shop a{
-    text-decoration: none;
-}
-
-
-.grid-container{
-    margin-bottom: 6.875rem;
-    margin-top: 6.875rem;
-    display: grid;
-    grid-template-columns: 12.5rem 12.5rem 12.5rem;
-    justify-content: center;
-    gap: 9.375rem;
-    align-content: center;
+.div-select select:hover{
+    background-color: #bdbaba;
 }
 
 /* css aplicado a footer */
 
 .logo-footer img{
-    height: 5.625rem;
-    width: 5.625rem;
+    height: 7.5rem;
+    width: 7.5rem;
     margin-bottom: 3.75rem;
 }
 
@@ -406,6 +291,10 @@ margin-top: 12.5rem;
     font-family:'Asap', sans-serif;
     font-size: .75rem;
     margin-left: 4.375rem;
+}
+
+.texto-ayuda a:hover{
+    color: #817d7d;
 }
 
 .texto-ayuda h2{
@@ -468,6 +357,11 @@ select {
 option {
     background-color: #f2f2f2;
 }
+
+.form-control{
+    border: 1px solid #817d7d; 
+    border-radius: 5px;
+}
 /* media queries */
 
 @media (max-width: 1024px){
@@ -506,7 +400,6 @@ option {
         margin-right: .625rem;
         margin-bottom: 6.25rem;
     }
-
     .productos img{
         width: 7.5rem;
         height: 7.5rem;
@@ -517,8 +410,14 @@ option {
     .texto-contacto h2{
         margin-bottom: 1.5625rem;
     }
-    .simbolo-class a img{
-        margin-right: 3.125rem;
+    .cardBody h5{
+        font-size: 1.5625rem;
+    }
+    .cardBody a{
+        padding: 0%;
+    }
+    .form-label{
+        font-size: 1.25rem;
     }
 }
 
@@ -592,6 +491,35 @@ option {
     .texto-contacto{
         margin-right: 1.875rem;
     }
+    .card-display-none{
+        display: none;
+    }
+    .style-products ul li a img{
+        width: 7.5rem;
+        height: 7.5rem;
+    }
+    .main-producto img{
+        width: 15.625rem;
+        height: 15.625rem;
+    }
+    .main-producto h2{
+        font-size: 1.875rem;
+    }
+    .main-producto p{
+        font-size: .9375rem;
+    }
+    .select-producto{
+        background-color: #c9c5c5;
+        width: 12.5rem ; 
+        padding: .3125rem;
+        border: 2px solid #949494;
+        border-radius: 5px;
+        font-size: 1.25rem;
+    }
+    .form-label{
+        font-size: .9375rem;
+    }
+
 }
 
 @media (max-width: 425px){
@@ -651,6 +579,21 @@ option {
     .display-none-redes{
         display: none;
     }
+    .card img{
+        width: 10.625rem;
+        height: 12.5rem;
+    }
+    .select-none{
+        display: none;
+    }
+    .cardBody h5{
+        font-size: 1.5625rem;
+        padding-left: .3125rem;
+        padding-right: .3125rem;
+    }
+    .style-titulo h1{
+        font-size: 2.5rem;
+    }
 }
 
 @media (max-width: 375px){
@@ -688,7 +631,7 @@ option {
         display: none;
     }
     .display-none-contacto{
-    display: none;
+        display: none;
     }
     .footer-images{
         display: flex;
@@ -710,6 +653,12 @@ option {
     }
     .texto-ayuda ul li a{
         font-size: 1.25rem;
+    }
+    .form-text{
+        font-size: .75rem;
+    }
+    .contacto-h1 h1{
+        font-size: 2.1875rem;
     }
 }
 
@@ -735,5 +684,11 @@ option {
     }
     .image-nosotros img{
         display: none;
+    }
+    .contacto-h1 h1{
+        font-size: 1.875rem;
+    }
+    .form-text{
+        font-size: .625rem;
     }
 }
