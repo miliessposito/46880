@@ -10,7 +10,7 @@
 /* nombre de fuente: font-family: 'Asap', sans-serif; */
 
 /* css aplicado a header */
-/* header{
+header{
     background-color: rgb(218, 216, 201);
     width: 100%;
     display: flex;
@@ -19,7 +19,7 @@
     position: sticky;
     top: 0;
     z-index: 1;
-}   */
+}  
 
 
 /* css aplicado a body */
