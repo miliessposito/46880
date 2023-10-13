@@ -1,4 +1,11 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Asap:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+/* nombre de fuente: font-family: 'Asap', sans-serif; */
 header {
   background-color: #dad8c9;
   width: 100%;

@@ -1,4 +1,34 @@
 
+// siempre se tiene que llamar a todo lo que este en utilities
+
+@import "./utilities/variables";
+@import "./utilities/maps";
+@import "./utilities/mixins";
+@import "./utilities/funciones";
+
+// ahora se colocan los elementos de base
+
+@import "./base/reset";
+@import "./base/typo";
+
+// ahora los elementos de layout
+
+@import "./layout/header";
+@import "./layout/main-index";
+@import "./layout/footer";
+
+// mencionar los elementos de components
+
+@import "./components/main";
+@import "./components/header";
+@import "./components/footer";
+@import "./components/bootstrap";
+
+// por ultimo mencionar los media query
+
+@import "./layout/media/media768";
+@import "./layout/media/media1024";
+
 header{
     background-color: rgb(218, 216, 201);
     width: 100%;
