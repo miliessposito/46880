@@ -1,0 +1,42 @@
+
+@media (max-width: 320px){
+    header{
+        width: 100%;
+    }
+    .ancla-mas{
+        margin-right: .3125rem;
+        margin-left: .3125rem;
+    }
+    .contenedor{
+        margin-top: 3.75rem;
+    }
+    .banner-index{ 
+        img{
+            margin-top: 1.875rem;
+        }
+    }
+    .texto-ayuda{
+        margin-left: .625rem;
+    
+        ul{ 
+            li{ 
+                a{
+                    font-size: 1.0625rem;
+                }
+            }
+        }
+    }
+    .image-nosotros{
+        img{
+            display: none;
+        }
+    }
+    .contacto-h1{ 
+        h1{
+            font-size: 1.875rem;
+        }
+    }
+    .form-text{
+        font-size: .625rem;
+    }
+}

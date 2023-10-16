@@ -1,0 +1,94 @@
+
+@media (max-width: 375px){
+    header{
+        width: 100%;
+    }
+    .navbar{
+        li{ 
+            a{
+            font-size: .5rem;
+            text-transform: uppercase;
+            }
+        }
+    }
+    .style-titulo{
+        h1{
+        font-size: 2.5rem;
+        margin-bottom: 1.875rem;
+        margin-top: 2.1875rem;
+        }
+    }
+    .display-none-375{
+        display: none;
+    }
+    .productos{
+        img{
+            width: 9.375rem;
+            height: 11.25rem;
+            }
+        p{
+            font-size: 1.25rem;
+        }
+    }
+    .contenedor{
+        a{
+            img{
+                width: 2.5rem;
+                height: 2.5rem;
+            }
+        }
+    }
+    .banner-index{
+        img{
+        margin-top: 1.25rem;
+        }
+    }
+    .texto-contacto{
+        p{
+        display: none;
+        }
+    }
+    .display-none-contacto{
+        display: none;
+    }
+    .footer-images{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-right: 0;
+
+        li{ 
+            a{ 
+                img{
+                    width: 3.125rem;
+                    height: 3.125rem;
+                    margin-block: .625rem;
+                }
+            }
+        }
+    }
+    .texto-ayuda{
+        margin-left: 1.875rem;
+        margin-top: 4.0625rem;
+    
+        h2{
+            font-size: 1.25rem;
+        }
+
+        ul{ 
+            li{ 
+                a{
+                    font-size: 1.25rem;
+                }
+            }
+        }
+    }
+    .form-text{
+        font-size: .75rem;
+    }
+    .contacto-h1{ 
+        h1{
+            font-size: 2.1875rem;
+        }
+    }
+}

@@ -1,0 +1,25 @@
+.card{ 
+    img{
+        margin: 0 auto;
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+.cardBody{
+    h5{
+        font-size: 1.875rem;
+    }
+
+    a{
+    font-size: 1.25rem;
+    }
+}
+
+.div-select{
+    select{
+        &:hover{
+        background-color: #bdbaba;
+        }
+    }
+}

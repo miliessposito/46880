@@ -1,16 +1,16 @@
-*{
+/* *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
+} */
 
 /* fuente que voy a utilizar */
-@import url('https://fonts.googleapis.com/css2?family=Asap:wght@300&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Asap:wght@300&display=swap'); */
 
 /* nombre de fuente: font-family: 'Asap', sans-serif; */
 
 /* css aplicado a header */
-header{
+/* header{
     background-color: rgb(218, 216, 201);
     width: 100%;
     display: flex;
@@ -19,7 +19,7 @@ header{
     position: sticky;
     top: 0;
     z-index: 1;
-}  
+}   */
 
 
 /* css aplicado a body */
@@ -365,7 +365,7 @@ option {
 
 /* media queries */
 
-@media (max-width: 1024px){
+/* @media (max-width: 1024px){
 
     nav{
         width: 100%;
@@ -691,4 +691,4 @@ option {
     .form-text{
         font-size: .625rem;
     }
-}
+} */
