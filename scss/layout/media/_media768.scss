@@ -32,6 +32,16 @@
         margin-bottom: 3.125rem;
         }
     }
+    form{
+        padding: 2.5rem;
+        border-radius: 20px;
+        margin-bottom: 3.75rem;
+        margin-left: 3.125rem;
+        margin-right: 3.125rem;
+        button{
+            margin-bottom: 1.25rem;
+            }
+    }
     .form-holder{
         margin-bottom: 3.75rem;
     }
@@ -100,18 +110,24 @@
         img{
         width: 15.625rem;
         height: 15.625rem;
-        }
-    }
-    .main-producto{ 
+        margin-left: 1.5625rem;
+        } 
+
         h2{
         font-size: 1.875rem;
         }
-    }
-    .main-producto{ 
+
         p{
         font-size: .9375rem;
         }
+        button{
+            width: 9.375rem;
+            margin-right: 4.6875rem;
+            padding-top: .3125rem;
+            padding-bottom: .3125rem;
+        }
     }
+
     .select-producto{
         background-color: #c9c5c5;
         width: 12.5rem ; 

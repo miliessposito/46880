@@ -6,7 +6,7 @@
 
 .form-label{
     font-weight: bold;
-    font-size: 1.625rem;
+    font-size: 1.25rem;
 }
 
 .form-text{
@@ -18,7 +18,7 @@
 }
 
 .bg-gris{
-    background-color: rgb(218, 216, 201);
+    background-color: $bg-principal;
 }
 
 .form-container{
@@ -36,8 +36,14 @@
 }
 
 form{
+    background-color: $bg-principal;
+    padding: 2.5rem;
+    border-radius: 25px;
+    margin-bottom: 3.75rem;
+    margin-left: 12.5rem;
+    margin-right: 12.5rem;
     button{
-        margin-bottom: 1.25rem;
+        margin-bottom: .3125rem;
         }
 }
 
@@ -45,3 +51,4 @@ form{
     border: 1px solid #817d7d; 
     border-radius: 5px;
 }
+

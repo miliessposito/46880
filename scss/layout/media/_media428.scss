@@ -64,6 +64,16 @@
             margin-bottom: 1.5625rem;
         }
     }
+    form{
+        padding: 1.875rem;
+        border-radius: 20px;
+        margin-bottom: 3.75rem;
+        margin-left: 2.5rem;
+        margin-right: 2.5rem;
+        button{
+            margin-bottom: .375rem;
+            }
+    }
     .footer-images{ 
         li{ 
             a{ 
@@ -97,5 +107,51 @@
         h1{
         font-size: 2.5rem;
         }
+    }
+    .flex-image{
+        @include grid(grid, none);
+        grid-template-columns: 30% 60%;
+    }
+    .style-products{
+        ul{
+            li{
+                a{
+                    img{
+                        width: 4.6875rem;
+                        height: 4.6875rem;
+                    }
+                }
+            }
+        }
+    }
+    .main-producto{
+        margin-left: 3.125rem;
+
+        img{
+            width: 9.375rem;
+            height: 9.375rem;
+            margin-left: 4.0625rem;
+        }
+        h2{
+            font-size: 1.25rem;
+        }
+        p{
+            font-size: .625rem;
+        }
+        button{
+            border-radius: 4px; 
+            width: 8.125rem;
+            font-size: .9375rem;
+            margin-left: 4.6875rem;
+            margin-top: 1.25rem;
+        }
+    }
+    .select-producto{
+            background-color: #c9c5c5;
+            width: 6.25rem; 
+            padding-left: .3125rem;
+            border: 1px solid #949494;
+            border-radius: 3px;
+            font-size: .6875rem;
     }
 }
