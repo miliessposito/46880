@@ -94,6 +94,11 @@
     .card-display-none{
         display: none;
     }
+    .card{
+        img{
+            width: 70%;
+        }
+    }
     .style-products{
         ul{
             li{ 
@@ -138,5 +143,11 @@
     }
     .form-label{
         font-size: .9375rem;
+    }
+    .logo-footer{
+        img{
+            height: 6.25rem;
+            width: 6.25rem;
+            }
     }
 }

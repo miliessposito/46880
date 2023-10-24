@@ -44,7 +44,26 @@
         font-family: 'Asap', sans-serif;
         font-size: 1.0625rem;
         text-align: center;
-        margin-bottom: 0;
+        margin-bottom: 0%
+    }
+    select{
+        &:hover{
+        background-color: #969191;
+        } 
+    }
+    button{
+        background-color: $bg-button; 
+        color: #fff; 
+        border: none; 
+        border-radius: 4px; 
+        width: 12.5rem;
+        font-size: .9375rem;
+        margin-left: 4.6875rem;
+        margin-top: 1.875rem;
+        cursor: pointer;
+        &:hover{
+            background-color: #444242;
+        }
     }
 }
 
@@ -55,28 +74,6 @@
     border: 2px solid #949494;
     border-radius: 5px;
     font-size: 1.25rem;
-}
-
-.main-producto{
-    select{
-        &:hover{
-        background-color: #969191;
-        }
-    }
-    button{
-        background-color: $color-principal; 
-        color: #fff; 
-        border: none; 
-        border-radius: 4px; 
-        width: 12.5rem;
-        font-size: .9375rem;
-        margin-left: 4.6875rem;
-        margin-top: 1.25rem;
-        cursor: pointer;
-        &:hover{
-            background-color: #444242;
-        }
-    }
 }
 
 .div-select{

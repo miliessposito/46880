@@ -1,4 +1,5 @@
 .card{ 
+    border: white;
     img{
         margin: 0 auto;
         max-width: 100%;
@@ -8,7 +9,7 @@
 
 .cardBody{
     h5{
-        font-size: 1.875rem;
+        font-size: 1.5625rem;
     }
 
     a{
@@ -18,6 +19,7 @@
 
 .div-select{
     select{
+        width: 9.375rem;
         &:hover{
         background-color: #bdbaba;
         }

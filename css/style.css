@@ -44,9 +44,8 @@ header {
 }
 
 .logo-footer img {
-  height: 7.5rem;
-  width: 7.5rem;
-  margin-bottom: 3.75rem;
+  height: 9.375rem;
+  width: 9.375rem;
 }
 
 .texto-contacto {
@@ -67,6 +66,9 @@ header {
 .texto-contacto ul li {
   list-style: none;
 }
+.texto-contacto ul li a img {
+  margin-top: 0.625rem;
+}
 
 .texto-ayuda {
   color: black;
@@ -81,7 +83,7 @@ header {
   color: black;
   font-family: "Asap", sans-serif;
   font-size: 1.25rem;
-  margin-bottom: 2.5rem;
+  margin-bottom: 1.25rem;
 }
 .texto-ayuda ul li {
   color: black;
@@ -132,8 +134,8 @@ body {
   align-items: center;
 }
 .contenedor img {
-  height: 3.125rem;
-  width: 3.125rem;
+  height: 3.75rem;
+  width: 3.75rem;
   margin-left: 3.4375rem;
   margin-right: 3.4375rem;
   margin-bottom: 7.5rem;
@@ -206,6 +208,14 @@ form button {
   margin-bottom: 0.3125rem;
 }
 
+.color-button {
+  background-color: rgb(124, 122, 118);
+  color: white;
+}
+.color-button:hover {
+  background-color: #817d7d;
+}
+
 .form-control {
   border: 1px solid #817d7d;
   border-radius: 5px;
@@ -276,7 +286,24 @@ form button {
   font-family: "Asap", sans-serif;
   font-size: 1.0625rem;
   text-align: center;
-  margin-bottom: 0;
+  margin-bottom: 0%;
+}
+.main-producto select:hover {
+  background-color: #969191;
+}
+.main-producto button {
+  background-color: rgb(124, 122, 118);
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  width: 12.5rem;
+  font-size: 0.9375rem;
+  margin-left: 4.6875rem;
+  margin-top: 1.875rem;
+  cursor: pointer;
+}
+.main-producto button:hover {
+  background-color: #444242;
 }
 
 .select-producto {
@@ -286,24 +313,6 @@ form button {
   border: 2px solid #949494;
   border-radius: 5px;
   font-size: 1.25rem;
-}
-
-.main-producto select:hover {
-  background-color: #969191;
-}
-.main-producto button {
-  background-color: black;
-  color: #fff;
-  border: none;
-  border-radius: 4px;
-  width: 12.5rem;
-  font-size: 0.9375rem;
-  margin-left: 4.6875rem;
-  margin-top: 1.25rem;
-  cursor: pointer;
-}
-.main-producto button:hover {
-  background-color: #444242;
 }
 
 .div-select {
@@ -327,6 +336,9 @@ option {
   background-color: #f2f2f2;
 }
 
+.card {
+  border: white;
+}
 .card img {
   margin: 0 auto;
   max-width: 100%;
@@ -334,12 +346,15 @@ option {
 }
 
 .cardBody h5 {
-  font-size: 1.875rem;
+  font-size: 1.5625rem;
 }
 .cardBody a {
   font-size: 1.25rem;
 }
 
+.div-select select {
+  width: 9.375rem;
+}
 .div-select select:hover {
   background-color: #bdbaba;
 }
@@ -489,6 +504,9 @@ option {
   .card-display-none {
     display: none;
   }
+  .card img {
+    width: 70%;
+  }
   .style-products ul li a img {
     width: 7.5rem;
     height: 7.5rem;
@@ -521,6 +539,10 @@ option {
   .form-label {
     font-size: 0.9375rem;
   }
+  .logo-footer img {
+    height: 6.25rem;
+    width: 6.25rem;
+  }
 }
 @media (max-width: 425px) {
   header {
@@ -545,6 +567,9 @@ option {
   .style-titulo h1 {
     font-size: 2.1875rem;
   }
+  .ancla-mas {
+    margin-bottom: 56px;
+  }
   .parrafo-nosotros {
     margin-left: 0.125rem;
     margin-right: 0.125rem;
@@ -554,7 +579,8 @@ option {
   }
   .texto-ayuda {
     margin-left: 0.625rem;
-    margin-bottom: 3.125rem;
+    margin-right: 1.875rem;
+    margin-bottom: 1.5625rem;
     margin-top: 3.125rem;
   }
   .texto-ayuda h2 {
@@ -566,7 +592,7 @@ option {
   }
   .texto-contacto {
     margin-right: 0.625rem;
-    margin-top: 3.125rem;
+    margin-bottom: 0.625rem;
   }
   .texto-contacto h2 {
     font-size: 0.9375rem;
@@ -592,6 +618,9 @@ option {
   .card img {
     width: 10.625rem;
     height: 12.5rem;
+  }
+  .div-select select {
+    width: 6.875rem;
   }
   .select-none {
     display: none;
@@ -651,10 +680,10 @@ option {
     font-size: 0.5rem;
     text-transform: uppercase;
   }
-  .style-titulo h1 {
-    font-size: 2.5rem;
-    margin-bottom: 1.875rem;
-    margin-top: 2.1875rem;
+  .nosotros-titulo h1 {
+    font-size: 3.125rem;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
   }
   .display-none-375 {
     display: none;
@@ -673,6 +702,9 @@ option {
   .banner-index img, .image-nosotros img {
     margin-top: 1.25rem;
   }
+  .ancla-mas {
+    margin-bottom: 4.0625rem;
+  }
   .texto-contacto p {
     display: none;
   }
@@ -683,7 +715,6 @@ option {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-right: 0;
   }
   .footer-images li a img {
     width: 3.125rem;
@@ -691,8 +722,7 @@ option {
     margin-block: 0.625rem;
   }
   .texto-ayuda {
-    margin-left: 1.875rem;
-    margin-top: 4.0625rem;
+    margin-top: 3.125rem;
   }
   .texto-ayuda h2 {
     font-size: 1.25rem;
@@ -714,6 +744,7 @@ option {
   .ancla-mas {
     margin-right: 0.3125rem;
     margin-left: 0.3125rem;
+    margin-bottom: 4.0625rem;
   }
   .contenedor {
     margin-top: 3.75rem;
@@ -721,11 +752,18 @@ option {
   .banner-index img, .image-nosotros img {
     margin-top: 1.875rem;
   }
+  .style-titulo h1 {
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+  }
   .texto-ayuda {
-    margin-left: 0.625rem;
+    margin-right: 1.875rem;
   }
   .texto-ayuda ul li a {
     font-size: 1.0625rem;
+  }
+  .nosotros-titulo h1 {
+    font-size: 2.5rem;
   }
   .image-nosotros img {
     display: none;
@@ -745,6 +783,12 @@ option {
   }
   form button {
     margin-bottom: 0.625rem;
+  }
+  .div-select select {
+    width: 7.5rem;
+  }
+  .mq320-none {
+    display: none;
   }
 }
 

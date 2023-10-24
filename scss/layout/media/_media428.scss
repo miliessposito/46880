@@ -32,6 +32,9 @@
         font-size: 2.1875rem;
         }
     }
+    .ancla-mas{
+        margin-bottom: 56px;
+    }
     .parrafo-nosotros{
         margin-left: .125rem;
         margin-right: .125rem;
@@ -42,7 +45,8 @@
     }
     .texto-ayuda{
         margin-left: .625rem;
-        margin-bottom: 3.125rem;
+        margin-right: 1.875rem;
+        margin-bottom: 1.5625rem;
         margin-top: 3.125rem;
 
         h2{
@@ -57,7 +61,7 @@
     }
     .texto-contacto{
         margin-right: .625rem;
-        margin-top: 3.125rem;
+        margin-bottom: .625rem;
 
         h2{
             font-size: .9375rem;
@@ -91,6 +95,12 @@
         img{
         width: 10.625rem;
         height: 12.5rem;
+        }
+    }
+
+    .div-select{
+        select{
+            width: 6.875rem;
         }
     }
     .select-none{

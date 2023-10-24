@@ -1,8 +1,7 @@
 .logo-footer{
     img{
-    height: 7.5rem;
-    width: 7.5rem;
-    margin-bottom: 3.75rem;
+    height: 9.375rem;
+    width: 9.375rem;
     }
 }
 
@@ -26,6 +25,11 @@
     ul{ 
         li{
             list-style: none;
+            a{
+                img{
+                    margin-top: .625rem;
+                }
+            }
         }
     }
 }
@@ -44,7 +48,7 @@
         color: $color-principal;
         font-family: 'Asap', sans-serif;
         font-size: 1.25rem;
-        margin-bottom: 2.5rem;
+        margin-bottom: 1.25rem;
     }
 
     ul{

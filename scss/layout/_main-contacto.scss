@@ -47,6 +47,14 @@ form{
         }
 }
 
+.color-button{
+    background-color: $bg-button;
+    color: white;
+    &:hover{
+        background-color: #817d7d;
+    }
+}
+
 .form-control{
     border: 1px solid #817d7d; 
     border-radius: 5px;
